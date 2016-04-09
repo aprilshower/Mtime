@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MtimeActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/light_gray"
+        android:padding="5dp">
+        <RadioButton
+            android:id="@+id/rb_main_home"
+            style="@style/NavRadioButton"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:text="@string/home"/>
+        <RadioButton
+            android:id="@+id/rb_main_ticket"
+            style="@style/NavRadioButton"
+            android:drawableTop="@drawable/selector_tab_ticket"
+            android:text="@string/buy_ticket" />
+        <RadioButton
+            android:id="@+id/rb_main_shopping"
+            style="@style/NavRadioButton"
+            android:drawableTop="@drawable/selector_tab_shopping_mall"
+            android:text="@string/shopping_mall" />
+        <RadioButton
+            android:id="@+id/rb_main_discover"
+            style="@style/NavRadioButton"
+            android:drawableTop="@drawable/selector_tab_discover"
+            android:text="@string/find" />
+        <RadioButton
+            android:id="@+id/rb_main_user"
+            style="@style/NavRadioButton"
+            android:drawableTop="@drawable/selector_tab_user"
+            android:text="@string/my" />
+    </RadioGroup>
+
+</LinearLayout>
